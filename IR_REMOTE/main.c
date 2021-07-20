@@ -272,7 +272,7 @@ int main(void)
     initUart0(); // configures UART0
     initEeprom();
     setUart0BaudRate(115200, 40e6); // sets data-transmission rate of UART0
-    putsUart0("*******PROJECT_EMBEDDED1*********\n");
+    putsUart0("*******REMOTE CONTROLLER*********\n");
     while(true)
     {
         if(commandtyped)
