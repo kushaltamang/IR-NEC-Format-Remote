@@ -8,7 +8,9 @@ A TM4C123GHCPM Microcontroller(RedBoard) is used to learn and play NEC format co
 -  The output signal sent by IR led is then modulated to match the signal sent when a button is pressed on the remote. 
 -  A speaker circuit is also connected for convenience. If an IR signal is received with any errors, lower pitched tone is played that indicates an error, whereas if IR signal received has no errors, a higher pitch tone is enabled to indicate success.
 
-A Putty Terminal at 115200 Baud Rate is used to send commands. Thee following commands are supported:
+
+A Putty Terminal at 115200 Baud Rate is used to send commands to the board. The following commands are supported:
+
 1. decode - Waits to receive NEC remote signal press and then displays the address and data of the remote button pressed. (Optional) plays a “good”/ “bad” tone when NEC alert is enabled.
 2. learn NAME - Receives an NEC IR command and stores as NAME with the associated address and data in EEPROM (e.g. learn ch-)
 3. erase NAME - Erases command NAME (e.g. erase 1)
