@@ -1,6 +1,15 @@
 //MOHIT_TAMANG
 //Universal Remote Controller
 //All Rights Reserved
+
+//-----------------------------------------------------------------------------
+// Hardware Target
+//-----------------------------------------------------------------------------
+
+// Target Platform: EK-TM4C123GXL Evaluation Board
+// Target uC:       TM4C123GH6PM
+// System Clock:    40 MHz
+
 #define GPI (*((volatile uint32_t *)(0x42000000 + (0x400043FC-0x40000000)*32 + 2*4)))
 
 #define IR_LED_MASK 32// PB5 mask
